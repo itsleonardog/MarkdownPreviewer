@@ -1,14 +1,13 @@
+const previewElement = document.getElementById('preview');
+const editorField = document.getElementById('editor');
+
 function updatePreview() {
-  let previewElement = document.getElementById('preview');
-  let editorValue = document.getElementById('editor').value;
-  let markedUpHTML = marked(editorValue);
-  previewElement.innerHTML = markedUpHTML;
+  previewElement.innerHTML = marked(editorField.value);
 }
 
 function setDefault() {
-  let defaultText =
-    `
-# Markdown Previewer
+  const defaultText =
+  `# Markdown Previewer
 ## by Leonardo Genzolini
 
 [Find more about me here](https://leonardogenzolini-portfolio-ba8b76628343.herokuapp.com/)
@@ -34,13 +33,11 @@ function exampleOfBlockCode() {
 > Learn how to be a web developer at [![freeCodeCamp](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)](https://www.freecodecamp.org)
 
 **Bolded Text**
-    `;
+`;
 
-  let editorField = document.getElementById('editor');
-  let previewElement = document.getElementById('preview');
   editorField.value = defaultText;
-  previewElement.innerHTML = marked(defaultText);
+  updatePreview();
 }
 
 document.addEventListener('DOMContentLoaded', setDefault);
-document.getElementById('editor').addEventListener('keyup', updatePreview);
+editorField.addEventListener('keyup', updatePreview);
