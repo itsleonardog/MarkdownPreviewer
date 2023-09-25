@@ -10,7 +10,9 @@ function setDefault() {
     `
 # Markdown Previewer
 ## by Leonardo Genzolini
+
 [Find more about me here](https://leonardogenzolini-portfolio-ba8b76628343.herokuapp.com/)
+
 <dl>
   <dt>Here is a list of things I like:</dt>
   <dd>1. Coding</dd>
@@ -18,7 +20,7 @@ function setDefault() {
   <dd>3. Making short movies</dd>
 </dl>
 
-\`Here's an example of inline code\`
+\`Here's an example of inline code:\`
 
 \`\`\`
 function exampleOfBlockCode() {
@@ -29,7 +31,8 @@ function exampleOfBlockCode() {
 - This is a project from the freeCodeCamp Front-End Libraries Certification
 - It was built using HTML, CSS, Bootstrap, and JavaScript
 
-> Learn how to be a web developer at [![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)](https://www.freecodecamp.org)
+> Learn how to be a web developer at [![freeCodeCamp](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)](https://www.freecodecamp.org)
+
 **Bolded Text**
     `;
 
